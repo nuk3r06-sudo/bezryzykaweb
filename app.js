@@ -7,6 +7,44 @@ document.addEventListener('DOMContentLoaded', () => {
   const yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
+  // ── Tab switching ────────────────────────────────────────
+  const tabs    = document.querySelectorAll('.nav-tab');
+  const panels  = { app: document.getElementById('panel-app'), roadmap: document.getElementById('panel-roadmap') };
+
+  tabs.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const target = btn.id === 'tab-btn-roadmap' ? 'roadmap' : 'app';
+
+      // Update buttons
+      tabs.forEach(t => { t.classList.remove('active'); t.setAttribute('aria-selected', 'false'); });
+      btn.classList.add('active');
+      btn.setAttribute('aria-selected', 'true');
+
+      // Update panels
+      Object.entries(panels).forEach(([key, el]) => {
+        if (!el) return;
+        if (key === target) el.removeAttribute('hidden');
+        else el.setAttribute('hidden', '');
+      });
+
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+
+      // Re-trigger fade-in observers for the newly shown panel
+      document.querySelectorAll('#panel-' + target + ' .fade-in:not(.visible)').forEach(el => {
+        el.classList.add('visible');
+      });
+    });
+  });
+
+  // Logo click → O aplikacji tab
+  const logoLink = document.getElementById('nav-logo-link');
+  if (logoLink) {
+    logoLink.addEventListener('click', e => {
+      e.preventDefault();
+      document.getElementById('tab-btn-app')?.click();
+    });
+  }
+
   // ── Sticky nav scroll class ──────────────────────────────
   const nav = document.querySelector('nav');
   const onScroll = () => {

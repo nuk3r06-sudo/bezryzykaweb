@@ -61,13 +61,19 @@
   ══════════════════════════════════════════════════════════ -->
   <nav aria-label="Nawigacja główna">
     <div class="container nav-inner">
-      <a href="#" class="nav-logo" aria-label="BezRyzyka — strona główna">
+      <a href="#" class="nav-logo" aria-label="BezRyzyka — strona główna" id="nav-logo-link">
         <img src="./icon.png" alt="BezRyzyka ikona aplikacji" width="32" height="32" />
         <span class="nav-logo-text">Bez<span>Ryzyka</span></span>
       </a>
+      <div class="nav-tabs" role="tablist" aria-label="Sekcje strony">
+        <button class="nav-tab active" id="tab-btn-app" role="tab" aria-selected="true" aria-controls="panel-app">O aplikacji</button>
+        <button class="nav-tab" id="tab-btn-roadmap" role="tab" aria-selected="false" aria-controls="panel-roadmap">Planowane zmiany</button>
+      </div>
     </div>
   </nav>
 
+  <!-- ── TAB: O APLIKACJI ─────────────────────────────────── -->
+  <div id="panel-app" role="tabpanel" aria-labelledby="tab-btn-app">
   <main>
 
     <!-- ══════════════════════════════════════════════════════
@@ -398,6 +404,104 @@
     </section>
 
   </main>
+  </div>
+
+  <!-- ── TAB: PLANOWANE ZMIANY ─────────────────────────────── -->
+  <div id="panel-roadmap" role="tabpanel" aria-labelledby="tab-btn-roadmap" hidden>
+    <section class="roadmap-section">
+      <div class="container">
+
+        <div class="roadmap-header fade-in">
+          <p class="section-label"><span>✦</span> Roadmap</p>
+          <h2 class="section-title">Plan Rozwoju Aplikacji</h2>
+          <p class="roadmap-intro">
+            Aplikacja BezRyzyka jest w 100% darmowym projektem rozwijanym dla społeczności.
+            Nie znajdziesz tu chamskich pełnoekranowych reklam ani blokad premium.
+            Oto co wprowadzimy w najbliższych aktualizacjach po pojawieniu się w oficjalnym sklepie:
+          </p>
+        </div>
+
+        <div class="roadmap-list">
+
+          <!-- v1.1.0 -->
+          <article class="roadmap-card fade-in">
+            <div class="roadmap-card-header">
+              <span class="roadmap-version">v1.1.0</span>
+              <h3 class="roadmap-title">🔧 Stabilność i Odchudzenie</h3>
+              <span class="roadmap-badge badge-soon">Wkrótce</span>
+            </div>
+            <ul class="roadmap-items">
+              <li>
+                <span class="roadmap-dot dot-red"></span>
+                <div>
+                  <strong>Pancerne powiadomienia</strong> — Poprawki w silniku tła, które eliminują problem losowo znikających lub spóźnionych powiadomień push.
+                </div>
+              </li>
+              <li>
+                <span class="roadmap-dot dot-red"></span>
+                <div>
+                  <strong>Czyste uprawnienia</strong> — Wycinamy zbędne uprawnienia generowane automatycznie przez system (jak dostęp do mikrofonu). W sklepie zostanie absolutne minimum: tylko aparat do skanera EAN.
+                </div>
+              </li>
+              <li>
+                <span class="roadmap-dot dot-red"></span>
+                <div>
+                  <strong>Optymalizacja konfiguracji sklepu</strong> — Drobne poprawki techniczne w plikach konfiguracyjnych aplikacji pod kątem pełnej zgodności z nowymi wymogami Google Play.
+                </div>
+              </li>
+            </ul>
+          </article>
+
+          <!-- v1.2.0 -->
+          <article class="roadmap-card fade-in fade-in-delay-1">
+            <div class="roadmap-card-header">
+              <span class="roadmap-version">v1.2.0</span>
+              <h3 class="roadmap-title">⚡ Ulepszony Skaner i Poprawki UI</h3>
+              <span class="roadmap-badge badge-planned">Planowane</span>
+            </div>
+            <ul class="roadmap-items">
+              <li>
+                <span class="roadmap-dot dot-amber"></span>
+                <div>
+                  <strong>Szybszy skaner</strong> — Podkręcenie algorytmu rozpoznawania kodów kreskowych i numerów partii, żeby weryfikacja w sklepie trwała ułamek sekundy.
+                </div>
+              </li>
+              <li>
+                <span class="roadmap-dot dot-amber"></span>
+                <div>
+                  <strong>Odświeżenie interfejsu</strong> — Drobne poprawki wizualne w menu, poprawa czytelności list oraz optymalizacja płynności działania ekranów głównych na starszych telefonach.
+                </div>
+              </li>
+            </ul>
+          </article>
+
+          <!-- v1.3.0 -->
+          <article class="roadmap-card fade-in fade-in-delay-2">
+            <div class="roadmap-card-header">
+              <span class="roadmap-version">v1.3.0</span>
+              <h3 class="roadmap-title">🌐 Nowe Źródła i Cyberbezpieczeństwo</h3>
+              <span class="roadmap-badge badge-future">Przyszłość</span>
+            </div>
+            <ul class="roadmap-items">
+              <li>
+                <span class="roadmap-dot dot-purple"></span>
+                <div>
+                  <strong>Więcej ostrzeżeń</strong> — Dodanie nowych, oficjalnych źródeł monitorujących zagrożenia konsumenckie.
+                </div>
+              </li>
+              <li>
+                <span class="roadmap-dot dot-purple"></span>
+                <div>
+                  <strong>Ochrona finansów i danych</strong> — Rozbudowa modułu o alerty dotyczące cyberbezpieczeństwa: informacje o trwających kampaniach wyłudzania danych (phishing), fałszywych domenach i oszustwach internetowych wymierzonych w polskich konsumentów.
+                </div>
+              </li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </div>
 
   <!-- ══════════════════════════════════════════════════════
        FOOTER
