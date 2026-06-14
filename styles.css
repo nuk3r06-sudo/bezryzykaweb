@@ -1150,3 +1150,127 @@ footer {
   justify-content: center;
   margin-top: 2px;
 }
+
+/* ── CONTACT SECTION ──────────────────────────────────────── */
+.contact-section {
+  padding: 100px 0;
+  background-color: var(--bg-base);
+  position: relative;
+  border-top: 1px solid var(--border);
+}
+
+.contact-section h2 {
+  font-size: clamp(28px, 4vw, 42px);
+  font-weight: 900;
+  letter-spacing: -1px;
+  line-height: 1.12;
+  color: var(--text-primary);
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.contact-subtitle {
+  font-size: 16px;
+  color: var(--text-sub);
+  max-width: 600px;
+  line-height: 1.7;
+  text-align: center;
+  margin: 0 auto 48px;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.form-group input,
+.form-group textarea {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 14px 16px;
+  color: var(--text-primary);
+  font-family: inherit;
+  font-size: 15px;
+  transition: var(--transition);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: var(--text-muted);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--red);
+  box-shadow: 0 0 0 3px rgba(255, 59, 48, 0.15);
+  background-color: var(--bg-card-hov);
+}
+
+.btn-submit {
+  align-self: flex-start;
+  padding: 14px 28px;
+  background-color: var(--red);
+  color: #ffffff;
+  border: none;
+  border-radius: var(--radius-sm);
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: var(--transition);
+  box-shadow: 0 4px 16px rgba(255, 59, 48, 0.2);
+}
+
+.btn-submit:hover {
+  background-color: var(--red-dim);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(255, 59, 48, 0.3);
+}
+
+.btn-submit:active {
+  transform: translateY(0);
+}
+
+/* ── NAV TAB LINK ─────────────────────────────────────────── */
+.nav-tab-link {
+  color: var(--text-sub);
+  font-size: 14px;
+  font-weight: 600;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: var(--radius-sm);
+  transition: var(--transition);
+  letter-spacing: -0.1px;
+}
+
+.nav-tab-link:hover {
+  color: var(--text-primary);
+  background: rgba(255,255,255,0.05);
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 80px 0;
+  }
+  .btn-submit {
+    align-self: stretch;
+    text-align: center;
+  }
+}
+
