@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- ── SEO ────────────────────────────────────────────── -->
+  <title>BezRyzyka — Wycofane produkty | Darmowa aplikacja na Android</title>
+  <meta name="description"
+    content="Sprawdzaj alerty o wycofanych produktach, lekach i żywności z oficjalnych źródeł: GIS, GIF, UOKiK, GIW, CERT. Skanuj kody EAN. Bądź bezpieczny. Pobierz za darmo." />
+  <meta name="keywords"
+    content="wycofane produkty, alerty sanitarne, GIS ostrzeżenia, skaner EAN, bezpieczeństwo żywności, BezRyzyka, Android" />
+  <meta name="author" content="pejotl Labs" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://bezryzyka.pejotl.pl/" />
+
+  <!-- ── Open Graph ─────────────────────────────────────── -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://bezryzyka.pejotl.pl/" />
+  <meta property="og:title" content="BezRyzyka — Kupuj bez ryzyka. Skanuj produkty." />
+  <meta property="og:description"
+    content="Darmowa aplikacja agregująca oficjalne alerty o wycofanych produktach. Skaner EAN, powiadomienia push, 100% darmowe." />
+  <meta property="og:image" content="../assets/icon.png" />
+
+  <!-- ── Twitter Card ───────────────────────────────────── -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="BezRyzyka — Wycofane produkty" />
+  <meta name="twitter:description" content="Alerty GIS, GIF, UOKiK w jednym miejscu. Skaner EAN. Pobierz za darmo." />
+  <meta name="twitter:image" content="../assets/icon.png" />
+
+  <!-- ── Favicon ────────────────────────────────────────── -->
+  <link rel="icon" type="image/png" href="../assets/icon.png" />
+  <link rel="apple-touch-icon" href="../assets/icon.png" />
+
+  <!-- ── Fonts & Styles ─────────────────────────────────── -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- ── Structured Data ────────────────────────────────── -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "BezRyzyka — Wycofane produkty",
+    "description": "Darmowa aplikacja Android agregująca alerty o wycofanych produktach z oficjalnych rejestrów rządowych.",
+    "operatingSystem": "ANDROID",
+    "applicationCategory": "HealthApplication",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "PLN" },
+    "author": { "@type": "Organization", "name": "pejotl Labs" }
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- ══════════════════════════════════════════════════════
+       NAVIGATION
+  ══════════════════════════════════════════════════════════ -->
+  <nav aria-label="Nawigacja główna">
+    <div class="container nav-inner">
+      <a href="#" class="nav-logo" aria-label="BezRyzyka — strona główna">
+        <img src="../assets/icon.png" alt="BezRyzyka ikona aplikacji" width="32" height="32" />
+        <span class="nav-logo-text">Bez<span>Ryzyka</span></span>
+      </a>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ══════════════════════════════════════════════════════
+         HERO
+    ══════════════════════════════════════════════════════════ -->
+    <section class="hero" id="home" aria-labelledby="hero-headline">
+      <div class="container">
+        <div class="hero-inner">
+
+          <!-- Left: Copy -->
+          <div class="hero-content">
+
+            <h1 class="hero-headline" id="hero-headline">
+              Kupuj bez&nbsp;<span class="highlight">ryzyka.</span><br />
+              Skanuj produkty.<br />
+              Chroń najbliższych.
+            </h1>
+
+            <p class="hero-subheadline">
+              Intuicyjne i darmowe narzędzie, które agreguje oficjalne alerty o wycofanych z rynku
+              produktach, lekach i żywności — prosto z rejestrów rządowych.
+            </p>
+
+            <!-- ── Onboarding instruction box ─────────────────── -->
+            <div class="onboarding-steps" role="note" aria-label="Jak pobrać aplikację — instrukcja">
+              <p class="onboarding-title">📋 Jak uzyskać dostęp do aplikacji?</p>
+              <ol class="onboarding-list">
+                <li>
+                  <span class="onboarding-step-num">1</span>
+                  <div>
+                    <strong>Dołącz do grupy testerów</strong> — kliknij przycisk
+                    <em>„Dołącz do testów"</em> poniżej i zapisz się na Google Groups.
+                    Bez tego kroku Google Play nie wyświetli opcji pobrania.
+                  </div>
+                </li>
+                <li>
+                  <span class="onboarding-step-num">2</span>
+                  <div>
+                    <strong>Pobierz z Google Play</strong> — po akceptacji (zwykle kilka
+                    minut) kliknij <em>„Pobierz z Google Play"</em> i zainstaluj aplikację.
+                  </div>
+                </li>
+              </ol>
+            </div>
+
+            <div class="hero-actions">
+              <!-- Primary CTA -->
+              <a href="https://play.google.com/store/apps/details?id=pl.pejotl.bezryzyka" class="btn-primary"
+                target="_blank" rel="noopener noreferrer" id="hero-cta-primary"
+                aria-label="Pobierz BezRyzyka z Google Play">
+                <!-- Google Play icon -->
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M3.18 23.76a2 2 0 0 0 2.07-.17l12.08-6.93-3.4-3.4L3.18 23.76zm-1.05-21.1C2.05 2.92 2 3.2 2 3.5v17c0 .3.05.58.13.84l.06.06 9.52-9.52v-.22L2.2 2.6l-.07.06zM21.5 10.5l-2.57-1.47-3.57 3.57 3.57 3.57 2.6-1.49a2 2 0 0 0 0-3.47l-.03-.01zM5.25.41.17 23.76l.01-.01 10.7-10.7V2.82L5.25.41z" />
+                </svg>
+                Pobierz z Google Play
+              </a>
+
+              <!-- Secondary CTA -->
+              <a href="https://groups.google.com/g/bezryzyka---testerzy-pejotl-labs" class="btn-secondary"
+                target="_blank" rel="noopener noreferrer" id="hero-cta-secondary"
+                aria-label="Dołącz do grupy testerów BezRyzyka">
+                🧪 Dołącz do testów
+              </a>
+            </div>
+
+            <!-- Trust signals -->
+            <div class="hero-trust">
+              <div class="trust-item">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z" />
+                </svg>
+                Dane z oficjalnych rejestrów
+              </div>
+              <span class="trust-divider" aria-hidden="true"></span>
+              <div class="trust-item">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                </svg>
+                100% darmowe
+              </div>
+              <span class="trust-divider" aria-hidden="true"></span>
+              <div class="trust-item">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z" />
+                </svg>
+                Bez subskrypcji
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: App Mockup -->
+          <div class="hero-visual" aria-label="Podgląd aplikacji BezRyzyka" role="img">
+            <div class="hero-orb" aria-hidden="true"></div>
+
+            <!-- Floating badge left -->
+            <div class="mockup-badge badge-left" aria-hidden="true">
+              <span class="badge-icon">🔔</span>
+              <div class="badge-text-group">
+                <span class="badge-label">Nowy alert GIS</span>
+                <span class="badge-sub">Właśnie teraz</span>
+              </div>
+            </div>
+
+            <div class="mockup-wrapper">
+              <div class="mockup-phone">
+                <div class="phone-notch">
+                  <div class="notch-pill"></div>
+                </div>
+                <div class="phone-screen">
+                  <div class="screen-header">
+                    <div class="screen-title">BezRyzyka</div>
+                    <div class="screen-sync">Ostatni skan: 14:32:01</div>
+                  </div>
+
+                  <!-- Alert card 1 -->
+                  <div class="screen-alert-card">
+                    <div class="alert-source-row">
+                      <span class="source-chip chip-gis">GIS</span>
+                      <span class="alert-urgency-dot urgency-high" aria-label="Wysoki priorytet"></span>
+                    </div>
+                    <div class="alert-title">Wycofanie: mleko UHT 3,2% — partia A20-091. Wykryto zanieczyszczenie.</div>
+                    <div class="alert-date">12 cze 2026</div>
+                  </div>
+
+                  <!-- Alert card 2 -->
+                  <div class="screen-alert-card">
+                    <div class="alert-source-row">
+                      <span class="source-chip chip-gif">GIF</span>
+                      <span class="alert-urgency-dot urgency-high" aria-label="Wysoki priorytet"></span>
+                    </div>
+                    <div class="alert-title">Decyzja GIF — wycofanie z obrotu: Ibuprom Sprint Caps 400mg.</div>
+                    <div class="alert-date">11 cze 2026</div>
+                  </div>
+
+                  <!-- Alert card 3 -->
+                  <div class="screen-alert-card">
+                    <div class="alert-source-row">
+                      <span class="source-chip chip-uokik">UOKiK</span>
+                      <span class="alert-urgency-dot urgency-medium" aria-label="Średni priorytet"></span>
+                    </div>
+                    <div class="alert-title">Niebezpieczne zabawki — zestaw budowlany XL.</div>
+                    <div class="alert-date">10 cze 2026</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating badge right -->
+            <div class="mockup-badge badge-right" aria-hidden="true">
+              <span class="badge-icon">📸</span>
+              <div class="badge-text-group">
+                <span class="badge-label">EAN zeskanowany</span>
+                <span class="badge-sub">Produkt bezpieczny ✓</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════
+         DATA SOURCES STRIP
+    ══════════════════════════════════════════════════════════ -->
+    <section class="sources-strip" aria-labelledby="sources-label">
+      <div class="container">
+        <p class="sources-label" id="sources-label">Dane pobierane bezpośrednio z oficjalnych źródeł rządowych</p>
+        <div class="sources-grid" role="list">
+          <div class="source-pill" role="listitem">
+            <span class="source-pill-dot" style="background:#86EFAC;" aria-hidden="true"></span>
+            GIS — Sanepid
+          </div>
+          <div class="source-pill" role="listitem">
+            <span class="source-pill-dot" style="background:#A5B4FC;" aria-hidden="true"></span>
+            GIF — Farmaceutyczny
+          </div>
+          <div class="source-pill" role="listitem">
+            <span class="source-pill-dot" style="background:#FCA5A5;" aria-hidden="true"></span>
+            UOKiK — Konsumenci
+          </div>
+          <div class="source-pill" role="listitem">
+            <span class="source-pill-dot" style="background:#FCD34D;" aria-hidden="true"></span>
+            GIW — Weterynaria
+          </div>
+
+          <div class="source-pill" role="listitem">
+            <span class="source-pill-dot" style="background:#FBCFE8;" aria-hidden="true"></span>
+            CERT Polska
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════
+         FEATURES
+    ══════════════════════════════════════════════════════════ -->
+    <section class="features" id="features" aria-labelledby="features-title">
+      <div class="container">
+
+        <div class="fade-in">
+          <p class="section-label" aria-hidden="true">
+            <span>✦</span> Funkcje aplikacji
+          </p>
+          <h2 class="section-title" id="features-title">
+            Wszystko, czego potrzebujesz<br />do bezpiecznych zakupów.
+          </h2>
+          <p class="section-sub">
+            Trzy filary, które tworzą najprostsze i najskuteczniejsze narzędzie
+            ochrony konsumenckiej dostępne na polskim rynku.
+          </p>
+        </div>
+
+        <div class="features-grid" role="list">
+
+          <!-- Feature 1 -->
+          <article class="feature-card fade-in fade-in-delay-1" role="listitem">
+            <div class="feature-icon-wrap" aria-hidden="true">🛡️</div>
+            <h3 class="feature-title">Alerty na żywo</h3>
+            <p class="feature-desc">
+              Błyskawiczne powiadomienia push o komunikatach Sanepidu (GIS), GIF oraz UOKiK.
+              Dowiedz się o zagrożeniu, zanim produkt trafi na Twój stół — nawet gdy telefon
+              leży ekranem w dół.
+            </p>
+          </article>
+
+          <!-- Feature 2 -->
+          <article class="feature-card fade-in fade-in-delay-2" role="listitem">
+            <div class="feature-icon-wrap" aria-hidden="true">📸</div>
+            <h3 class="feature-title">Skaner kodów EAN</h3>
+            <p class="feature-desc">
+              Podejdź do półki w sklepie, przeskanuj kod kreskowy telefonem i natychmiast sprawdź
+              historię bezpieczeństwa danej partii. Dual-mode: kod EAN i numer partii z etykiety.
+            </p>
+          </article>
+
+          <!-- Feature 3 -->
+          <article class="feature-card fade-in fade-in-delay-3" role="listitem">
+            <div class="feature-icon-wrap" aria-hidden="true">💎</div>
+            <h3 class="feature-title">100% Darmowa. Zero Premium.</h3>
+            <p class="feature-desc">
+              Brak irytujących, pełnoekranowych reklam wideo. Brak ukrytych subskrypcji i paywalli.
+              BezRyzyka to czysta użyteczność publiczna — bo bezpieczeństwo nie powinno kosztować.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════
+         HOW IT WORKS
+    ══════════════════════════════════════════════════════════ -->
+    <section class="how-it-works" id="jak-to-dziala" aria-labelledby="hiw-title">
+      <div class="container">
+
+        <div class="fade-in">
+          <p class="section-label" aria-hidden="true">
+            <span>✦</span> Jak to działa
+          </p>
+          <h2 class="section-title" id="hiw-title">
+            Trzy kroki do<br />pełnego bezpieczeństwa.
+          </h2>
+        </div>
+
+        <ol class="steps-grid" aria-label="Kroki korzystania z aplikacji">
+          <li class="step fade-in fade-in-delay-1">
+            <div class="step-number" aria-hidden="true">1</div>
+            <h3 class="step-title">Zainstaluj i włącz alerty</h3>
+            <p class="step-desc">
+              Pobierz aplikację z Google Play. Włącz powiadomienia push i wyłącz optymalizację
+              baterii dla BezRyzyka. Jeden raz — na zawsze gotowy.
+            </p>
+          </li>
+          <li class="step fade-in fade-in-delay-2">
+            <div class="step-number" aria-hidden="true">2</div>
+            <h3 class="step-title">Otrzymuj alerty w tle</h3>
+            <p class="step-desc">
+              Aplikacja co godzinę sprawdza oficjalne rejestry GIS, GIF, UOKiK, GIW, RAPEX
+              i CERT Polska — bez otwierania apki i bez rozładowywania baterii.
+            </p>
+          </li>
+          <li class="step fade-in fade-in-delay-3">
+            <div class="step-number" aria-hidden="true">3</div>
+            <h3 class="step-title">Skanuj przed zakupem</h3>
+            <p class="step-desc">
+              W sklepie użyj skanera EAN lub wpisz numer partii z etykiety. Natychmiastowy
+              wynik z bazy wycofanych produktów — zanim produkt wyląduje w koszyku.
+            </p>
+          </li>
+        </ol>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════
+         CTA SECTION
+    ══════════════════════════════════════════════════════════ -->
+    <section class="cta-section" id="pobierz" aria-labelledby="cta-title">
+      <div class="container cta-inner">
+        <div class="cta-box fade-in">
+          <span class="cta-shield" role="img" aria-label="Tarcza bezpieczeństwa">🛡️</span>
+          <h2 class="cta-title" id="cta-title">
+            Zacznij chronić swoją rodzinę<br />już teraz. Za darmo.
+          </h2>
+          <p class="cta-sub">
+            Dołącz do zamkniętych testów i pomóż nam stworzyć najlepszą aplikację
+            bezpieczeństwa konsumenckiego w Polsce.
+          </p>
+          <div class="cta-buttons">
+            <a href="https://play.google.com/store/apps/details?id=pl.pejotl.bezryzyka" class="btn-primary" target="_blank"
+              rel="noopener noreferrer" id="cta-primary-btn" aria-label="Pobierz BezRyzyka z Google Play Store">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true">
+                <path
+                  d="M3.18 23.76a2 2 0 0 0 2.07-.17l12.08-6.93-3.4-3.4L3.18 23.76zm-1.05-21.1C2.05 2.92 2 3.2 2 3.5v17c0 .3.05.58.13.84l.06.06 9.52-9.52v-.22L2.2 2.6l-.07.06zM21.5 10.5l-2.57-1.47-3.57 3.57 3.57 3.57 2.6-1.49a2 2 0 0 0 0-3.47l-.03-.01zM5.25.41.17 23.76l.01-.01 10.7-10.7V2.82L5.25.41z" />
+              </svg>
+              Pobierz z Google Play
+            </a>
+            <a href="https://groups.google.com/g/bezryzyka---testerzy-pejotl-labs" class="btn-secondary" target="_blank"
+              rel="noopener noreferrer" id="cta-secondary-btn"
+              aria-label="Dołącz do grupy testerów BezRyzyka na Google Groups">
+              🧪 Dołącz do zamkniętych testów
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════════════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════════════════════ -->
+  <footer role="contentinfo">
+    <div class="container footer-inner">
+
+      <a href="#" class="footer-logo" aria-label="BezRyzyka strona główna">
+        <img src="../assets/icon.png" alt="BezRyzyka logo" width="28" height="28" />
+        <span class="footer-logo-text">BezRyzyka</span>
+      </a>
+
+      <p class="footer-copy">
+        &copy; <span id="year">2026</span> pejotl Labs. Wszelkie prawa zastrzeżone.<br />
+        Dane pobierane bezpośrednio z oficjalnych publicznych rejestrów rządowych.
+      </p>
+
+
+
+    </div>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+
+</html>
